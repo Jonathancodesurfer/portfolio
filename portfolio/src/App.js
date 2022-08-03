@@ -8,6 +8,14 @@ function App(props) {
     <div className="App">
       <Navbar/>
       <Header/>
+      <main>
+        <div className='Skills'>
+          <div>
+            <h1>HTML</h1>
+            <img ></img>
+          </div>
+        </div>
+      </main>
     </div>
   );
 }

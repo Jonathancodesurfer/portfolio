@@ -7,7 +7,7 @@ const Header = (props) => {
         <header className='Header'>
             <div className='Header_wrapper'>
                 <div>
-                    <h1 title='Jonathan:'>Jonathan:</h1>
+                    <h1 title='Jonathan:'>Jonathan Alpízar</h1>
                     <h1 title='Front End Engineer'>Front End Engineer</h1>
                 </div>
                 <div className='Header_imag-wrapper'>
