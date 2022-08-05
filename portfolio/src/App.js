@@ -2,6 +2,7 @@
 import './App.css';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
+import Skills from './components/Skills';
 
 function App(props) {
   return (
@@ -9,12 +10,7 @@ function App(props) {
       <Navbar/>
       <Header/>
       <main>
-        <div className='Skills'>
-          <div>
-            <h1>HTML</h1>
-            <img ></img>
-          </div>
-        </div>
+        <Skills/>
       </main>
     </div>
   );
