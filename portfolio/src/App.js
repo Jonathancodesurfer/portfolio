@@ -12,7 +12,7 @@ function App(props) {
       <main>
         <Skills/>
         <div>
-          work expirence 
+          work expirence asdf
         </div>
       </main>
     </div>
