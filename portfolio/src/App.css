@@ -1,3 +1,6 @@
+.Buffer {
+  height: 300px;
+}
 main {
   margin-top: 40px;
 }
@@ -18,7 +21,7 @@ nav {
   background-color: white;
 }
 
-.Navbar, .Header_wrapper, .Skills {
+.Navbar, .Header_wrapper, .Skills, .Work {
   max-width: 800px;
   margin: auto;
   padding: 0 20px 0 20px;
@@ -116,6 +119,17 @@ nav {
   font-size: 40px;
   
 }
+
+.Work {
+  background-color: #cacaca;
+}
+
+.Project_img {
+  width: 200px;
+  height:200px;
+}
+
+
 /*---------------- media queries @  -------------------------*/
 
 @media only screen and (min-width: 760px) {
