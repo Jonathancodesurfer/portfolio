@@ -11,6 +11,9 @@ function App(props) {
       <Header/>
       <main>
         <Skills/>
+        <div>
+          work expirence 
+        </div>
       </main>
     </div>
   );
