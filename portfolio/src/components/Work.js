@@ -1,9 +1,16 @@
+import olasLogo from './assets/olaslogo.png';
+import burhamLogo from './assets/burnhamlogo.jpeg'
+
+
 
 const Work = (props) => {
 
+    let logo;
+
     const projectsData = [
         {name : "Olas Media",
-         url: "Olas media.com",
+         url: "https://olasmedia.com",
+         imgSrc: '/olaslogo.png',
          technologies:[
              {name:"Html",
               color:"orange",},
@@ -16,7 +23,8 @@ const Work = (props) => {
             ]},
 
         {name: "Burham center",
-         url: "Burham center.org",
+         url: "https://burnhamcenter.org",
+         imgSrc:  '/burnhamlogo.jpeg',
          technologies:[
             {name:"Html",
              color:"orange",},
@@ -29,7 +37,8 @@ const Work = (props) => {
            ]},
 
         {name: "Pacabol",
-         url: "Pacabol.com",
+         url: "https://pacabol.com",
+         imgSrc: '/pacabol.png',
          technologies:[
             {name:"Html",
              color:"orange",},
@@ -37,30 +46,31 @@ const Work = (props) => {
              color:"blue"},
             {name:"JavaScript",
              color:"yellow"},
-            {name:"Webflow",
+             {name:"Webflow",
              color:"blue"}
+    
            ]}
 ];
 
     return (
-        <div>
+        <div className='Work-wrapper'>
+            <h1 className='Work-heading'>Work Experience</h1>
             <div className='Work'>
-            <h1>Work Experience</h1>
+            
             {
                 projectsData.map((project) => (
                 <div className='Project'>
-                    <h1 key={project.name}>{project.name}</h1>
-                    <img className='Project_img' ></img>
-                    <a key={project.url} href='https://www.olasmedia.com'> {project.url} </a>
+                    <h1 key={project.name}>{project.name}</h1>     
+                    <img src={project.imgSrc} className='Project_img' ></img>
+                    <a key={project.url} href={project.url}> {project.url.slice(8)} </a>
+                    <h2 key={project.name}>Technologies:</h2> 
                     {
                         project.technologies.map((technology)=>(
-                        //let fontColor = `'${technology.color}'`;
-                        <ul className='Project_list'>
-                        <li  key={technology.name} >{technology.name}</li>
-                    </ul>
+                            <ul className='Project_list'>
+                                <li style={{color:technology.color}} key={technology.name} >{technology.name}</li>
+                            </ul>
                         ))
                     }
-                    
                 </div>
                 ))
             }

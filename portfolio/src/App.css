@@ -21,7 +21,7 @@ nav {
   background-color: white;
 }
 
-.Navbar, .Header_wrapper, .Skills, .Work {
+.Navbar, .Header_wrapper, .Skills, .Work-wrapper {
   max-width: 800px;
   margin: auto;
   padding: 0 20px 0 20px;
@@ -120,13 +120,51 @@ nav {
   
 }
 
-.Work {
-  background-color: #cacaca;
+.Work-wrapper {
+  background-color: #e6e6e6;
+  text-align: center;
+  padding-top: 40px;
 }
+
+.Work {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+}
+
+.Work-heading {
+  margin-bottom: 40px;
+}
+
+.Project {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 10px;
+  justify-items: center;
+  padding: 20px 0 20px 0;
+  border: solid 2px white;
+}
+
+.Project a {
+  color: rgb(31, 31, 31);
+  font-size: 18px;
+}
+
+
+.Project_list {
+  margin: 0;
+}
+.Project_list li {
+  font-size: 18px;
+  text-align: left;
+}
+
+
 
 .Project_img {
   width: 200px;
-  height:200px;
 }
 
 
