@@ -49,6 +49,21 @@ const Work = (props) => {
              {name:"Webflow",
              color:"blue"}
     
+           ]},
+
+           {name: "test",
+         url: "https://pacabol.com",
+         imgSrc: '/pacabol.png',
+         technologies:[
+            {name:"Html",
+             color:"orange",},
+            {name:"Css",
+             color:"blue"},
+            {name:"JavaScript",
+             color:"yellow"},
+             {name:"Webflow",
+             color:"blue"}
+    
            ]}
 ];
 
