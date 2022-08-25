@@ -8,7 +8,7 @@ const Skills = (props) => {
     return (
         <div className='Skills_container'>
             <div className='Skills_title-wrapper'>
-                <h1 className='Skills_title' >Field studies <br/>and technologies</h1>
+                <h1 className='Skills_title' >Field studies Test <br/>and technologies</h1>
                 <img width={40} height={40} src={webDevLogo}></img>
             </div>
             
