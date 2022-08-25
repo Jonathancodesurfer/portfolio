@@ -17,7 +17,7 @@ const Work = (props) => {
              {name:"Css",
               color:"blue"},
              {name:"JavaScript",
-              color:"yellow"},
+              color:"rgb(243, 224, 80)"},
              {name:"Webflow",
               color:"blue"}
             ]},
@@ -31,7 +31,7 @@ const Work = (props) => {
             {name:"Css",
              color:"blue"},
             {name:"JavaScript",
-             color:"yellow"},
+             color:"rgb(243, 224, 80)"},
             {name:"Webflow",
              color:"blue"}
            ]},
@@ -45,7 +45,7 @@ const Work = (props) => {
             {name:"Css",
              color:"blue"},
             {name:"JavaScript",
-             color:"yellow"},
+             color:"rgb(243, 224, 80)"},
              {name:"Webflow",
              color:"blue"}
     
@@ -60,7 +60,7 @@ const Work = (props) => {
             {name:"Css",
              color:"blue"},
             {name:"JavaScript",
-             color:"yellow"},
+             color:"rgb(243, 224, 80)"},
              {name:"Webflow",
              color:"blue"}
     
