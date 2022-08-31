@@ -142,8 +142,7 @@ nav {
 .Project {
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 10px;
-  justify-items: center;
+  grid-row-gap: 20px;
   padding: 20px 0 20px 0;
   border: solid 2px lightblue;
   border-radius: 5px;
@@ -154,6 +153,13 @@ nav {
   font-size: 18px;
 }
 
+.List_flex-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
 
 .Project_list {
   margin: 0;
@@ -168,7 +174,10 @@ nav {
 .Project_img {
   width: 200px;
   height: 150px;
+  justify-self: center
 }
+
+
 
 
 /*---------------- media queries @  -------------------------*/

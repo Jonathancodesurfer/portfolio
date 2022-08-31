@@ -1,5 +1,4 @@
-import olasLogo from './assets/olaslogo.png';
-import burhamLogo from './assets/burnhamlogo.jpeg'
+
 
 
 
@@ -51,9 +50,9 @@ const Work = (props) => {
     
            ]},
 
-           {name: "test",
-         url: "https://pacabol.com",
-         imgSrc: '/pacabol.png',
+           {name: "This Portfolio",
+         url: "",
+         imgSrc: '/static/media/jonathan.b99e2573e5df043b5c85.png',
          technologies:[
             {name:"Html",
              color:"orange",},
@@ -61,7 +60,7 @@ const Work = (props) => {
              color:"blue"},
             {name:"JavaScript",
              color:"rgb(243, 224, 80)"},
-             {name:"Webflow",
+             {name:"React",
              color:"blue"}
     
            ]}
@@ -79,13 +78,16 @@ const Work = (props) => {
                     <img src={project.imgSrc} className='Project_img' ></img>
                     <a key={project.url} href={project.url}> {project.url.slice(8)} </a>
                     <h2 key={project.name}>Technologies:</h2> 
+                    <div className="List_flex-wrapper">
                     {
                         project.technologies.map((technology)=>(
-                            <ul className='Project_list'>
-                                <li style={{color:technology.color}} key={technology.name} >{technology.name}</li>
-                            </ul>
+                            
+                                <ul className='Project_list'>
+                                    <li style={{color:technology.color}} key={technology.name} >{technology.name}</li>
+                                </ul>
                         ))
                     }
+                    </div>
                 </div>
                 ))
             }
