@@ -144,8 +144,9 @@ nav {
   grid-template-columns: 1fr;
   grid-row-gap: 20px;
   padding: 20px 0 20px 0;
-  border: solid 2px lightblue;
+  border: solid 1px #b4b4b4;
   border-radius: 5px;
+  justify-items: center;
 }
 
 .Project a {
@@ -173,8 +174,11 @@ nav {
 
 .Project_img {
   width: 200px;
-  height: 150px;
-  justify-self: center
+  height: 200px;
+  border-radius: 135px;
+  justify-self: center;
+  object-fit: cover;
+  border: solid 1px #b4b4b4;
 }
 
 
