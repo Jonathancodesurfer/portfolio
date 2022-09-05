@@ -1,0 +1,19 @@
+
+.Form_container {
+    max-width: 900px;
+    margin:80px auto;
+    padding: 0px 20px;
+}
+
+Form {
+    display: grid;
+    row-gap: 10px;
+}
+
+.Form_name {
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}

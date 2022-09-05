@@ -1,5 +1,6 @@
 
 import './App.css';
+import FormikForm from './components/FormikForm';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Skills from './components/Skills';
@@ -14,6 +15,7 @@ function App(props) {
       <main>
         <Skills/>
         <Work/>
+        <FormikForm />
       </main>
       <div className='Buffer'></div>
     </div>
