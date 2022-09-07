@@ -91,7 +91,7 @@ const SignupForm = () => {
           }, 400);
         }}
       >
-        <Form>
+        <Form netlify>
           <MyTextInput
             name="firstName"
             type="text"
