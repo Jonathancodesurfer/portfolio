@@ -58,8 +58,8 @@ nav {
 .Header {
   background-color: #cacaca;
   background: #70e1f5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 20px 0 20px 0;
 }
 
@@ -200,7 +200,7 @@ nav {
 
   .Header_wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: ;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -211,9 +211,16 @@ nav {
     justify-self: end;
   }
 
+  .Header_title {
+    grid-area: 1 / 1 / 2 / 3;
+    
+  }
+  
+
   .Header_title h1 {
     font-size: 36px;
     text-align: start;
+    
   }
 
   .Navbar_menu-items a {

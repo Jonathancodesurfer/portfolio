@@ -50,9 +50,9 @@ const Work = (props) => {
     
            ]},
 
-           {name: "This Portfolio",
+           {name: "This Site",
          url: "",
-         imgSrc: '/static/media/jonathan.b99e2573e5df043b5c85.png',
+         imgSrc: '/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg',
          technologies:[
             {name:"Html",
              color:"orange",},
