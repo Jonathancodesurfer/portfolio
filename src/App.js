@@ -1,5 +1,6 @@
 
 import './App.css';
+import Footer from './components/Footer';
 import FormikForm from './components/FormikForm';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
@@ -17,6 +18,7 @@ function App(props) {
         <Work/>
         <FormikForm />
       </main>
+      <Footer/>
     </div>
   );
 }

@@ -21,7 +21,7 @@ nav {
   background-color: white;
 }
 
-.Navbar, .Header_wrapper, .Skills, .Work-wrapper, .Form_container {
+.Navbar, .Header_wrapper, .Skills, .Work-wrapper, .Form_container, footer{
   max-width: 800px;
   margin: auto;
   padding: 0 20px 0 20px;
