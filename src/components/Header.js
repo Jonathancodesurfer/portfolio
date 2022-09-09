@@ -1,5 +1,5 @@
-import jonathanPic from './jonathan.png';
-import logo from './logo.svg';
+
+import logo from './assets/logo.svg';
 
 const Header = (props) => {
     return (

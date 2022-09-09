@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import logo from './logo.svg';
-import buguerMenu from './menu.png';
+import logo from './assets/logo.svg';
+import buguerMenu from './assets/menu.png';
 
 
 const Navbar = (props) => {
