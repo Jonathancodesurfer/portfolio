@@ -1,4 +1,5 @@
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer';
 import FormikForm from './components/FormikForm';
@@ -10,16 +11,29 @@ import Work from './components/Work';
 
 function App(props) {
   return (
-    <div className="App">
-      <Navbar/>
-      <Header/>
-      <main>
-        <Skills/>
-        <Work/>
-        <FormikForm />
-      </main>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+        <div className="App">
+          <Navbar/>
+          <Header/>
+          <main>
+            
+            
+            <Routes>
+              <Route path="/" element={
+                <div>
+                  <Skills/>
+                   <Work/>
+                </div>
+              } />
+              <Route path="/contact" element={<FormikForm /> } />
+              
+            </Routes>
+             
+          </main>
+          <Footer/>
+        </div>
+    </BrowserRouter>
+    
   );
 }
 
