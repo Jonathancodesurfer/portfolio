@@ -10,6 +10,7 @@ const ContactForm = () => {
   return (
       <div>
         <form id='contactForm' name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
               <input  placeholder='First Name' type="text" name="name" />
               <input  placeholder='Last Name' type="text" name="last name" />
               <input  placeholder='Email' type="email" name="email" />
