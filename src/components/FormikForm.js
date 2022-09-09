@@ -8,8 +8,9 @@ const ContactForm = () => {
     
 
   return (
-      <div>
-        <form id='contactForm' name="contact" method="POST" data-netlify="true">
+      <div className='Form_container'>
+          <h1 className='Form_title'>Contact us</h1>
+        <form  id='contactForm' name="contact" method="POST" data-netlify="true">
               <input type="hidden" name="form-name" value="contact" />
               <input  placeholder='First Name' type="text" name="name" />
               <input  placeholder='Last Name' type="text" name="last name" />
