@@ -17,7 +17,6 @@ function App(props) {
         <Work/>
         <FormikForm />
       </main>
-      <div className='Buffer'></div>
     </div>
   );
 }
