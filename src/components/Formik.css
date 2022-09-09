@@ -16,17 +16,30 @@ input {
     border-radius: 10px;
     border-color: rgb(75, 75, 75);
     border: solid 1px rgb(75, 75, 75);
-    background-color: #000046ee;
+    color: rgb(41, 41, 41);
 
 }
+
+input[type=text], textarea {
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    padding-left: 10px;
+  }
+  
+  input[type=text]:focus {
+    border: 3px solid #555;
+  }
+
+
 
 
 textarea {
     resize: none; 
     height: 80px;
     border-radius: 10px;
-    border-color: rgb(75, 75, 75);
-    background-color: #000046ee;
 }
 
 button {
@@ -34,13 +47,13 @@ button {
     padding: 7.5px 15px;
     border-radius: 15px;
     border: solid 1px rgb(75, 75, 75);
-    background-color: #1CB5E0;
+    background-color: #000046;
+    color: white;
     cursor: pointer;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: white;
-    padding-left: 10px;
+    color: rgb(46, 46, 46);
   }
 
 .error {
