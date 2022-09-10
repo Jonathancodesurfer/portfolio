@@ -2,14 +2,12 @@ import htmlLogo from './assets/html-logo.jpg';
 import cssLogo from './assets/csslogo.jpg';
 import jsLogo from './assets/javascriptlogo.svg';
 import reactLogo from './assets/reactlogo.svg';
-import webDevLogo from './assets/webdevelopment.svg';
 
 const Skills = (props) => {
     return (
         <div className='Skills_container'>
             <div className='Skills_title-wrapper'>
                 <h1 className='Skills_title' >Field studies Test <br/>and technologies</h1>
-                <img width={40} height={40} src={webDevLogo}></img>
             </div>
             
             <div className='Skills'>

@@ -81,20 +81,20 @@ nav {
 
 .Skills {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 1px;
+  grid-row-gap: 10px;
   margin-top: 40px;
 }
 
 .Skills_item h1 {
-  font-size: 32px;
+  font-size: 20px;
    margin-bottom: 20px;
 }
 
 .Skills_item img {
-  max-width: 100px;
+  max-width: 60px;
 }
 
 .Skills_item {
@@ -229,10 +229,11 @@ nav {
 
   .Skills {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    padding: 40px 0px;
   }
 
   .Skills_title {
