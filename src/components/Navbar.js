@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from './assets/logo.svg';
 import buguerMenu from './assets/menu.png';
 
@@ -11,9 +12,9 @@ const Navbar = (props) => {
     if(showMenu) {
         menu = 
         <div className='Navbar_mobile-menu'>
-            <a className='Navbar_mobile-menu-items' href='/home'>Home</a>
-            <a className='Navbar_mobile-menu-items' href='/blog'>Blog</a>
-            <a className='Navbar_mobile-menu-items' href='/contact'>Contact</a>
+            <Link className='Navbar_mobile-menu-items' to='/'>Home</Link>
+            <Link className='Navbar_mobile-menu-items' to='/about'>About</Link>
+            <Link className='Navbar_mobile-menu-items' to='/contact'>Contact</Link>
           </div>
     }
 
@@ -21,11 +22,11 @@ const Navbar = (props) => {
     return (
         <nav>
         <div className='Navbar'>
-          <a href='/'><img src={logo} width={'70px'} height={'70px'} /></a>
+          <Link to='/'><img src={logo} width={'70px'} height={'70px'} /></Link>
           <div className='Navbar_menu-items'>
-            <a href='/home'>Home</a>
-            <a href='/blog'>Blog</a>
-            <a href='/contact'>Contact</a>
+            <Link className='Navbar_mobile-menu-items' to='/'>Home</Link>
+            <Link className='Navbar_mobile-menu-items' to='/about'>About</Link>
+            <Link className='Navbar_mobile-menu-items' to='/contact'>Contact</Link>
           </div>
           <div className='Navbar_burguer-menu'>
             <img onClick={() => setShowMenu(!showMenu)} src={buguerMenu} width={'40px'} height={'40px'} />
