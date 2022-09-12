@@ -73,7 +73,7 @@ const Work = (props) => {
             
             {
                 projectsData.map((project) => (
-                <div className='Project'>
+                <div className='Project' >
                     <h1 key={project.name}>{project.name}</h1>     
                     <img src={project.imgSrc} className='Project_img' ></img>
                     <a key={project.url} href={project.url}> {project.url.slice(8)} </a>
@@ -83,7 +83,7 @@ const Work = (props) => {
                         project.technologies.map((technology)=>(
                             
                                 <ul className='Project_list'>
-                                    <li  key={technology.name} >{technology.name}</li>
+                                    <li key={technology.name} >{technology.name}</li>
                                 </ul>
                         ))
                     }
