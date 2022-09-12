@@ -5,8 +5,31 @@ main {
   margin-top: 40px;
 }
 .App {
-font-family: monospace ;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
+
+#light {
+  background-color: white;
+}
+
+
+#dark {
+  background-color: #000046 ;
+  color: white;
+}
+
+#dark nav {
+  background-color: #000046 ;
+}
+
+#dark a {
+  color: white;
+}
+
+#dark .Footer_container {
+  border-top: solid 1px white;
+}
+
 
 h1 {
   margin: 0;
@@ -40,6 +63,10 @@ nav {
 
 .Navbar_menu-items {
   display: none;
+}
+
+.Navbar_menu-items label {
+  margin-right: 5px;
 }
 
 .Navbar_mobile-menu {
@@ -147,7 +174,6 @@ nav {
   border: solid 1px #b4b4b4;
   border-radius: 5px;
   justify-items: center;
-  background-color: whitesmoke;
 }
 
 .Project:hover {
