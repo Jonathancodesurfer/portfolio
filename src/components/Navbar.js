@@ -12,14 +12,7 @@ export const ThemeContext = createContext(null);
 
 const Navbar = (props) => {
 
-  const [theme, setTheme] = useState("light");
-
-  const toggleTheme = () => {
-      setTheme((curr) => (curr === "light" ? "dark" : "light"));
-      
-      
-  };
-
+  
 
     const [showMenu, setShowMenu] = useState(false);
 
@@ -27,15 +20,14 @@ const Navbar = (props) => {
     if(showMenu) {
         menu = 
         <div className='Navbar_mobile-menu'>
-            <Link className='Navbar_mobile-menu-items' to='/'>Home</Link>
-            <Link className='Navbar_mobile-menu-items' to='/about'>About</Link>
-            <Link className='Navbar_mobile-menu-items' to='/contact'>Contact</Link>
+            <Link onClick={() => setShowMenu(!showMenu)} className='Navbar_mobile-menu-items' to='/'>Home</Link>
+            <Link onClick={() => setShowMenu(!showMenu)}  className='Navbar_mobile-menu-items' to='/about'>About</Link>
+            <Link onClick={() => setShowMenu(!showMenu)} className='Navbar_mobile-menu-items' to='/contact'>Contact</Link>
           </div>
     }
 
 
     return (
-      <ThemeContext.Provider value={{theme, toggleTheme}}>
           <nav>
             <div className='Navbar'>
               <Link to='/'><img src={logo} width={'70px'} height={'70px'} /></Link>
@@ -43,8 +35,6 @@ const Navbar = (props) => {
                 <Link className='Navbar_mobile-menu-items' to='/'>Home</Link>
                 <Link className='Navbar_mobile-menu-items' to='/about'>About</Link>
                 <Link className='Navbar_mobile-menu-items' to='/contact'>Contact</Link>
-                <label>{theme === "light" ? "Light Mode" : "Dark mode"}</label>
-                <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
                 
               </div>
               <div className='Navbar_burguer-menu'>
@@ -55,7 +45,6 @@ const Navbar = (props) => {
             { menu }
 
          </nav>
-      </ThemeContext.Provider>
     );
 }
 

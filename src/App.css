@@ -35,6 +35,9 @@ h1 {
   margin: 0;
 }
 
+.ToggleTheme {
+  margin: 10px auto !important;
+}
 
 nav {
   border-bottom: solid 2px lightblue;
@@ -44,7 +47,7 @@ nav {
   background-color: white;
 }
 
-.Navbar, .Header_wrapper, .Skills, .Work-wrapper, .Form_container, footer{
+.Navbar, .Header_wrapper, .Skills, .Work-wrapper, .Form_container, footer, .ToggleTheme{
   max-width: 800px;
   margin: auto;
   padding: 0 20px 0 20px;

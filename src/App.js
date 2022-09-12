@@ -28,13 +28,13 @@ function App(props) {
     <ThemeContext.Provider value={{theme, toggleTheme}}>
       <BrowserRouter>
         <div className="App" id={theme}>
-          <Navbar />
-          <label>{theme === "light" ? "Light Mode" : "Dark mode"}</label>
-          <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
+          <Navbar/>
+          <div className='ToggleTheme'>
+            <label>{theme === "light" ? "Light Mode" : "Dark mode"}</label>
+            <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
+          </div>
           <Header/>
           <main>
-            
-            
             <Routes>
               <Route path="/" element={
                 <div>
