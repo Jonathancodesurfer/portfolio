@@ -29,7 +29,7 @@ function App(props) {
       <BrowserRouter>
         <div className="App" id={theme}>
           <Navbar/>
-          <div className='ToggleTheme'>
+          <div className="ToggleThemeButton">
             <label>{theme === "light" ? "Light Mode" : "Dark mode"}</label>
             <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
           </div>
