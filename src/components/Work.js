@@ -83,7 +83,7 @@ const Work = (props) => {
                         project.technologies.map((technology)=>(
                             
                                 <ul className='Project_list'>
-                                    <li style={{color:technology.color}} key={technology.name} >{technology.name}</li>
+                                    <li  key={technology.name} >{technology.name}</li>
                                 </ul>
                         ))
                     }
