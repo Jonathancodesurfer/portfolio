@@ -11,6 +11,7 @@ import Skills from './components/Skills';
 import Work from './components/Work';
 
 import ReactSwitch from "react-switch";
+import About from './components/About';
 
 export const ThemeContext = createContext(null);
 
@@ -43,7 +44,7 @@ function App(props) {
                 </div>
               } />
               <Route path="/contact" element={<FormikForm /> } />
-              
+              <Route path='/about' element={<About />} />
             </Routes>
              
           </main>
