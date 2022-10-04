@@ -1,0 +1,40 @@
+.About {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px 0 20px;
+}
+
+.About img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.Profile_title {
+    text-align: center;
+}
+
+.Profile_wrapper {
+    display: flex;
+    flex-direction: column;
+    column-gap: 40px;
+    align-items: center;
+    justify-items: center;
+    margin: 40px 0;
+    text-align: center;
+}
+
+/*--------------------- media queries --------------*/
+
+@media only screen and (min-width: 760px) { 
+    
+    .Profile_wrapper {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .Profile_title {
+        text-align: left;
+    }
+
+}
